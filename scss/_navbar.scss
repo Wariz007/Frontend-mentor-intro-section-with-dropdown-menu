@@ -1,0 +1,14 @@
+.navigation-bar {
+    /*border: 2px solid magenta;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+
+    button {
+        padding: 1rem;
+        background: transparent;
+        border: none;
+    }
+}
