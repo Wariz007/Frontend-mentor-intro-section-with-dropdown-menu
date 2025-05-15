@@ -14,8 +14,25 @@
 <body>
   <!--navigation bar-->
   <div class="navigation-bar">
-    <img src="images/logo.svg" alt="Brand logo">
-    <button><img src="images/icon-menu.svg" alt="Burger menu"></button>
+    <div class="logo-and-buttons">
+      <img id="logo" src="images/logo.svg" alt="Brand logo">
+      <div class="navigation-buttons">
+        <div class="left-buttons">
+          <button class="general-styles left-styles f-and-c" id="features">Features <img src="images/icon-arrow-down.svg" alt="down arrow icon"></button>
+          <button class="general-styles left-styles f-and-c">Company <img src="images/icon-arrow-down.svg" alt="down arrow icon"></button>
+          <button class="general-styles left-styles">Careers</button>
+          <button class="general-styles left-styles">About</button>
+        </div>
+
+
+        <div class="login-and-register-buttons">
+          <button class="general-styles"><p>Login</p></button>
+          <button class="general-styles" id="register-button">Register</button>
+        </div>
+      </div>
+
+    </div>
+    <button id="burger"><img src="images/icon-menu.svg" alt="Burger menu"></button>
   </div>
 
   <!--header-->

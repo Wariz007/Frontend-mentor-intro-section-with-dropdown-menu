@@ -22,10 +22,81 @@ body {
   padding-block: 1.5rem;
   padding-inline: 1.5rem;
 }
+.navigation-bar #logo {
+  margin-right: 1.5rem;
+}
 .navigation-bar button {
   padding: 1rem;
   background: transparent;
   border: none;
+}
+.navigation-bar .logo-and-buttons {
+  /*border: 2px solid magenta;*/
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.navigation-bar .navigation-buttons {
+  /*border: 2px solid orange;*/
+  display: none;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.navigation-bar .navigation-buttons button {
+  cursor: pointer;
+}
+.navigation-bar .navigation-buttons .left-buttons {
+  /*border: 2px solid red;*/
+  display: flex;
+  align-items: center;
+}
+.navigation-bar .navigation-buttons .left-buttons .f-and-c {
+  /*border: 2px solid magenta;*/
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.navigation-bar .navigation-buttons .left-buttons .f-and-c img {
+  height: 10px;
+  width: 10px;
+}
+.navigation-bar .navigation-buttons .left-styles {
+  margin-right: 1rem;
+  padding-inline: 1rem;
+}
+.navigation-bar .navigation-buttons .login-and-register-buttons {
+  /*border: 2px solid red;*/
+  display: flex;
+  align-items: center;
+}
+.navigation-bar .navigation-buttons .login-and-register-buttons button {
+  margin-right: 1rem;
+  padding-inline: 1.5rem;
+}
+.navigation-bar .navigation-buttons .login-and-register-buttons #register-button {
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+}
+.navigation-bar .navigation-buttons .general-styles {
+  /*border: 2px solid magenta;*/
+  font-weight: bold;
+  color: hsl(0, 0%, 41%);
+  display: flex;
+  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 0.7108433735rem + 0.2409638554vw, 1rem);
+}
+@media (min-width: 901px) {
+  .navigation-bar {
+    /*border: 2px solid magenta;*/
+  }
+  .navigation-bar .navigation-buttons {
+    display: flex;
+  }
+  .navigation-bar #burger {
+    display: none;
+  }
 }
 
 .hero-container {
@@ -37,6 +108,13 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
+}
+@media (min-width: 601px) {
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .body-content {
