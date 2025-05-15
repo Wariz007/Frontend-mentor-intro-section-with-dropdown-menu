@@ -8,4 +8,10 @@
         height: auto;
         display: block;
     }
+
+    @include respond-to(small) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

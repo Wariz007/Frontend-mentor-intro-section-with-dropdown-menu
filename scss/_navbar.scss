@@ -6,9 +6,88 @@
     padding-block: 1.5rem;
     padding-inline: 1.5rem;
 
+    #logo {
+        margin-right: 1.5rem;
+    }
+
     button {
         padding: 1rem;
         background: transparent;
         border: none;
+    }
+
+    .logo-and-buttons {
+    /*border: 2px solid magenta;*/
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.navigation-buttons {
+    /*border: 2px solid orange;*/
+    display: none;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    button {
+        cursor: pointer;
+    }
+
+    .left-buttons {
+        /*border: 2px solid red;*/
+        display: flex;
+        align-items: center;
+
+        .f-and-c {
+            /*border: 2px solid magenta;*/
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            img {
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+    .left-styles {
+        margin-right: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .login-and-register-buttons {
+        /*border: 2px solid red;*/
+        display: flex;
+        align-items: center;
+
+        button {
+            margin-right: 1rem;
+            padding-inline: 1.5rem;
+        }
+
+        #register-button {
+            border: 1px solid $mediumGray;
+            border-radius: 15px;
+        }
+    }
+
+    .general-styles {
+        /*border: 2px solid magenta;*/
+        font-weight: bold;
+        color: $mediumGray;
+        display: flex;
+        font-size: 0.8rem;
+        font-size: clamp(0.8rem, 0.710843373493976rem + 0.24096385542168672vw, 1rem);
+    }
+}
+
+    @include respond-to(medium) {
+        /*border: 2px solid magenta;*/
+        .navigation-buttons {
+            display: flex;
+        }
+        #burger {
+            display: none;
+        }
     }
 }
