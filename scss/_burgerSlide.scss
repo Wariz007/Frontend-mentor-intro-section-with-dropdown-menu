@@ -1,0 +1,69 @@
+.burger-slide{
+    border: 2px solid red;
+    background-color: lightgray;
+    width: 65%;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include respond-to(medium){
+        display: none;
+    }
+
+    .close-btn{
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .slide-buttons{
+        border: 2px solid magenta;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-block: 1rem;
+        width: 100%;
+
+        .f-and-c{
+            margin-left: 5px;
+        }
+    }
+
+    .general-styles{
+        padding: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        color: $mediumGray;
+        border: none;
+        background: none;
+    }
+
+    .login-and-register-buttons{
+        border: 2px solid magenta;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+
+        .register-btn{
+            padding-block: 1rem;
+            padding-inline: 3rem;
+            border-radius: 20px;
+            border: 1px solid $mediumGray;
+            background: none;
+            cursor: pointer;
+            color: $mediumGray;
+        }
+        .login-btn{
+            padding-block: 1rem;
+            padding-inline: 2rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: $mediumGray;
+        }
+    }
+}

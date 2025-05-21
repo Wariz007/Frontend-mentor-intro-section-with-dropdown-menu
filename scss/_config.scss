@@ -16,5 +16,10 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    align-items: flex-end;
+    position: relative;
+
+    @include respond-to(medium){
+        align-items: center;
+    }
 }
