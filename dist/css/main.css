@@ -51,7 +51,13 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
+  align-items: flex-end;
+  position: relative;
+}
+@media (min-width: 984px) {
+  body {
+    align-items: center;
+  }
 }
 
 .navigation-bar {
@@ -64,6 +70,10 @@ body {
 }
 .navigation-bar #logo {
   margin-right: 1.5rem;
+  cursor: pointer;
+}
+.navigation-bar #burger {
+  cursor: pointer;
 }
 .navigation-bar button {
   padding: 1rem;
@@ -209,4 +219,69 @@ body {
 }
 .footer .footer-img {
   width: 80px;
+}
+
+.burger-slide {
+  border: 2px solid red;
+  background-color: lightgray;
+  width: 65%;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (min-width: 984px) {
+  .burger-slide {
+    display: none;
+  }
+}
+.burger-slide .close-btn {
+  padding: 1rem;
+  cursor: pointer;
+}
+.burger-slide .slide-buttons {
+  border: 2px solid magenta;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-block: 1rem;
+  width: 100%;
+}
+.burger-slide .slide-buttons .f-and-c {
+  margin-left: 5px;
+}
+.burger-slide .general-styles {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: hsl(0, 0%, 41%);
+  border: none;
+  background: none;
+}
+.burger-slide .login-and-register-buttons {
+  border: 2px solid magenta;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.burger-slide .login-and-register-buttons .register-btn {
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 41%);
+  background: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
+}
+.burger-slide .login-and-register-buttons .login-btn {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: hsl(0, 0%, 41%);
 }/*# sourceMappingURL=main.css.map */
