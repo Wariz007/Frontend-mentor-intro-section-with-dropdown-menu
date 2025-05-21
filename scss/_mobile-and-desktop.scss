@@ -1,0 +1,27 @@
+.screen-sizes {
+    @include respond-to(small){
+        .mobile-screen {
+            display: none;
+        }
+    }
+}
+
+.desktop-screen {
+    border: 2px solid magenta;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+
+    .copy-container {
+        border: 2px solid red;
+    }
+
+    .image-container {
+        border: 2px solid magenta;
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}

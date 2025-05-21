@@ -1,0 +1,41 @@
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include respond-to(medium){
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        height: 100vh;
+        align-items: center;
+        width: min(90%, 70rem);
+        margin-inline: auto;
+
+        .body-content {
+            align-items: flex-start;
+        }
+
+        .hero-container {
+            grid-column: 2;
+            grid-row: span 2;
+        }
+        .body-and-footer {
+            grid-row: 1/3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                max-width: 14ch;
+                text-align: left;
+                font-size: 3.5rem;
+            }
+            p {
+                text-align: left;
+                width: 45ch;
+            }
+        }
+    }
+}

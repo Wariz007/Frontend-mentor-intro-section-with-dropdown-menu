@@ -3,15 +3,30 @@
     max-width: 100%;
     height: auto;
 
-    img {
+    .mobile-image {
         max-width: 100%;
         height: auto;
         display: block;
     }
+    .desktop-image {
+        display: none;
+    }
 
-    @include respond-to(small) {
+    @include respond-to(medium){
         display: flex;
         align-items: center;
         justify-content: center;
+        /*border: 2px solid magenta;*/
+        height: 100%;
+
+        .mobile-image {
+            display: none;
+        }
+        .desktop-image {
+            display: block;
+            max-width: 500px;
+            height: 500px;
+        }
+
     }
 }
