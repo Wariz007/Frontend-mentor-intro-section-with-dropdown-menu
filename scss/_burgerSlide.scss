@@ -1,10 +1,9 @@
 .burger-slide{
     border: 2px solid red;
-    background-color: lightgray;
+    background-color: rgb(247, 247, 247);
     width: 65%;
     position: absolute;
     height: 100vh;
-    display: flex;
     display: none;
     flex-direction: column;
     align-items: flex-end;
@@ -19,7 +18,7 @@
     }
 
     .slide-buttons{
-        border: 2px solid magenta;
+        /*border: 2px solid magenta;*/
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -42,7 +41,7 @@
     }
 
     .login-and-register-buttons{
-        border: 2px solid magenta;
+        /*border: 2px solid magenta;*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,7 +52,7 @@
             padding-block: 1rem;
             padding-inline: 3rem;
             border-radius: 20px;
-            border: 1px solid $mediumGray;
+            border: 1.5px solid $mediumGray;
             background: none;
             cursor: pointer;
             color: $mediumGray;
