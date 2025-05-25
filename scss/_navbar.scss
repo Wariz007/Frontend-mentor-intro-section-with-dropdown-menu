@@ -70,9 +70,15 @@
             padding-inline: 1.5rem;
         }
 
+
         #register-button {
             border: 1px solid $mediumGray;
             border-radius: 15px;
+
+            &:hover {
+                border: 1.5px solid hsl(0, 0%, 8%);
+                color: hsl(0, 0%, 8%);
+            }
         }
     }
 
@@ -83,6 +89,10 @@
         display: flex;
         font-size: 0.8rem;
         font-size: clamp(0.8rem, 0.710843373493976rem + 0.24096385542168672vw, 1rem);
+
+        &:hover {
+            color: hsl(0, 0%, 8%);
+        }
     }
 }
 

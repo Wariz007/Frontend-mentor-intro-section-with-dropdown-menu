@@ -23,3 +23,18 @@ featuresBtn?.addEventListener('click', () => {
 companyBtn?.addEventListener('click', () => {
     companyDropdown.classList.toggle('show');
 })
+
+//DESKTOP
+const featuresDropdownForDesktop = document.querySelector('.features-dropdown-for-desktop') as HTMLElement;
+const featuresBtnForDesktop = document.getElementById('features');
+const companyBtnForDesktop = document.getElementById('company');
+const companyDropDownForDesktop = document.querySelector('.company-dropdown-for-desktop') as HTMLElement;
+console.log(companyBtnForDesktop);
+console.log(companyDropDownForDesktop);
+
+featuresBtnForDesktop?.addEventListener('click', () => {
+    featuresDropdownForDesktop.classList.toggle('show');
+})
+companyBtnForDesktop?.addEventListener('click', () => {
+    companyDropDownForDesktop.classList.toggle('show');
+})
