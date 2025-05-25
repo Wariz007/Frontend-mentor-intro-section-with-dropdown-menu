@@ -1,5 +1,5 @@
 .burger-slide{
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     background-color: rgb(247, 247, 247);
     width: 65%;
     position: absolute;
@@ -28,6 +28,11 @@
 
         .f-and-c{
             margin-left: 5px;
+        }
+        button {
+            /*border: 2px solid yellow;*/
+            width: 100%;
+            text-align: left;
         }
     }
 
@@ -64,6 +69,52 @@
             background: none;
             cursor: pointer;
             color: $mediumGray;
+        }
+    }
+}
+
+.features-drop-down {
+    /*border: 2px solid magenta;*/
+    width: 100%;
+
+    .dropdown-menu {
+        /*border: 2px solid yellow;*/
+        margin-left: 2rem;
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        
+        .dropdown-item {
+            display: flex;
+            gap: 15px;
+
+            p{
+                font-weight: 500;
+                color: $mediumGray;
+            }
+        }
+    }
+}
+
+.company-dropdown {
+    /*border: 2px solid magenta;*/
+    width: 100%;
+
+    .dropdown-menu {
+        /*border: 2px solid yellow;*/
+        margin-left: 2rem;
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        
+        button {
+            padding-right: 1rem;
+            padding-block: 0.5rem;
+            border: none;
+            background: transparent;
+            font-size: 1.2rem;
+            color: $mediumGray;
+            font-weight: 500;
         }
     }
 }
