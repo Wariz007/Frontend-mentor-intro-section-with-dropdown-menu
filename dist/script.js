@@ -22,3 +22,16 @@ featuresBtn === null || featuresBtn === void 0 ? void 0 : featuresBtn.addEventLi
 companyBtn === null || companyBtn === void 0 ? void 0 : companyBtn.addEventListener('click', () => {
     companyDropdown.classList.toggle('show');
 });
+//DESKTOP
+const featuresDropdownForDesktop = document.querySelector('.features-dropdown-for-desktop');
+const featuresBtnForDesktop = document.getElementById('features');
+const companyBtnForDesktop = document.getElementById('company');
+const companyDropDownForDesktop = document.querySelector('.company-dropdown-for-desktop');
+console.log(companyBtnForDesktop);
+console.log(companyDropDownForDesktop);
+featuresBtnForDesktop === null || featuresBtnForDesktop === void 0 ? void 0 : featuresBtnForDesktop.addEventListener('click', () => {
+    featuresDropdownForDesktop.classList.toggle('show');
+});
+companyBtnForDesktop === null || companyBtnForDesktop === void 0 ? void 0 : companyBtnForDesktop.addEventListener('click', () => {
+    companyDropDownForDesktop.classList.toggle('show');
+});

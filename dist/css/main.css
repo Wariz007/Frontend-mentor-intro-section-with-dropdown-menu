@@ -138,6 +138,10 @@ body {
   border: 1px solid hsl(0, 0%, 41%);
   border-radius: 15px;
 }
+.navigation-bar .navigation-buttons .login-and-register-buttons #register-button:hover {
+  border: 1.5px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
 .navigation-bar .navigation-buttons .general-styles {
   /*border: 2px solid magenta;*/
   font-weight: bold;
@@ -145,6 +149,9 @@ body {
   display: flex;
   font-size: 0.8rem;
   font-size: clamp(0.8rem, 0.7108433735rem + 0.2409638554vw, 1rem);
+}
+.navigation-bar .navigation-buttons .general-styles:hover {
+  color: hsl(0, 0%, 8%);
 }
 @media (min-width: 984px) {
   .navigation-bar {
@@ -339,4 +346,57 @@ body {
   font-size: 1.2rem;
   color: hsl(0, 0%, 41%);
   font-weight: 500;
+}
+
+.features-dropdown-anchor {
+  border: 2px solid magenta;
+  position: relative;
+}
+
+.features-dropdown-for-desktop {
+  /*border: 2px solid magenta;*/
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 15px;
+  background: white;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.721);
+  position: absolute;
+  left: 140px;
+  top: -10px;
+}
+.features-dropdown-for-desktop .dropdown-item {
+  display: flex;
+  gap: 10px;
+  color: hsl(0, 0%, 41%);
+}
+
+.company-dropdown-for-desktop {
+  position: absolute;
+  padding: 1.5rem;
+  background: white;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 30px -3px rgba(0, 0, 0, 0.721);
+  left: 300px;
+  top: -10px;
+}
+.company-dropdown-for-desktop .dropdown-item {
+  /*border: 2px solid magenta;*/
+}
+.company-dropdown-for-desktop .dropdown-item button {
+  padding-right: 1rem;
+  padding-block: 0.5rem;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
